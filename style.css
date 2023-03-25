@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&family=Hanken+Grotesk:wght@500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&family=Hanken+Grotesk:wght@500;700;800&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: auto;
+  padding: auto;
+}
+
+.container {
+  display: grid;
+  width: 60vw;
+  align-items: center;
+  justify-content: center;
+  height: 100dvh;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.first-component {
+  background-color: hsl(31, 77%, 52%);
+  color: white;
+  padding: 3rem;
+  border-radius: 5px 0 0 5px;
+  display: flex;
+  flex-direction: column;
+}
+.first-component img {
+  padding-bottom: 1.2rem;
+  align-self: flex-start;
+}
+.first-component p {
+  padding: 3rem 0;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+.first-component button {
+  padding: 0.5rem 1rem;
+  align-self: center;
+  border-radius: 15px;
+  background: white;
+  border: white solid;
+  color: hsl(31, 77%, 52%);
+  transition: 0.3s;
+}
+.first-component button:hover {
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  background: transparent;
+  border: white solid;
+  color: white;
+  font-weight: 700;
+  transform: 0.3s;
+}
+.first-component h2 {
+  font-family: "Epilogue", sans-serif;
+  font-weight: 700;
+}
+
+.second-component {
+  background-color: hsl(184, 100%, 22%);
+  color: white;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+.second-component img {
+  padding-bottom: 1.2rem;
+  align-self: flex-start;
+}
+.second-component p {
+  padding: 3rem 0;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+.second-component button {
+  padding: 0.5rem 1rem;
+  align-self: center;
+  border-radius: 15px;
+  background: white;
+  border: white solid;
+  color: hsl(184, 100%, 22%);
+  transition: 0.3s;
+}
+.second-component button:hover {
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  background: transparent;
+  border: white solid;
+  color: white;
+  font-weight: 700;
+  transform: 0.3s;
+}
+.second-component h2 {
+  font-family: "Epilogue", sans-serif;
+  font-weight: 700;
+}
+
+.third-component {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 5px 5px 0;
+  color: white;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+.third-component img {
+  padding-bottom: 1.2rem;
+  align-self: flex-start;
+}
+.third-component p {
+  padding: 3rem 0;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+.third-component button {
+  padding: 0.5rem 1rem;
+  align-self: center;
+  border-radius: 15px;
+  background: white;
+  border: white solid;
+  color: hsl(179, 100%, 13%);
+  transition: 0.3s;
+}
+.third-component button:hover {
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  background: transparent;
+  border: white solid;
+  color: white;
+  font-weight: 700;
+  transform: 0.3s;
+}
+.third-component h2 {
+  font-family: "Epilogue", sans-serif;
+  font-weight: 700;
+}
+
+@media (max-width: 812px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  .item {
+    height: 500%;
+  }
+  .item button {
+    align-self: start;
+  }
+  .item p {
+    text-align: justify;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
