@@ -146,17 +146,24 @@ body{
 
 @media(max-width:812px){
     .container{
-        display: flex;
+        display: block;
         flex-direction: column;
-        text-align: left;
     }
     .item{
-        height: 500%;
+        padding: 22px;
         button{
-            align-self: start;
+            align-self: flex-start;
+
         }
-        p{
-            text-align: justify;
-        }
+    }
+    .first-component{
+        border-radius: 0%;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+    }
+    .third-component{
+        border-radius: 0%;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
     }
 }
